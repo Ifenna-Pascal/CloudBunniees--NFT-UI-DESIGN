@@ -2,7 +2,7 @@ import React from 'react'
 
 function Mint() {
     return (
-        <div className="md:max-w-[60%] w-[90%] my-12 flex md:flex-row flex-col bg-white rounded-2xl shadow-xl mx-auto w-full h-[600px] md:h-[300px] md:my-8 ">
+        <div className="md:max-w-[60%] w-[80%] my-12 flex md:flex-row flex-col bg-white rounded-2xl shadow-xl mx-auto w-full h-[600px] md:h-[300px] md:my-8 ">
             <div className='md:w-[30%] w-full h-[40%] md:h-full'>
                 <img src="/img/mint.jpeg" className="w-full  h-full rounded-2xl object-cover  " />
             </div>
