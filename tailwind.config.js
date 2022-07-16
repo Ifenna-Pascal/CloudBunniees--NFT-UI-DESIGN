@@ -18,7 +18,8 @@ module.exports = {
         team: "url('/img/team.png')",
         teamOne: "url('/img/teamBg1.png')",
         teamTwo: "url('/img/teamBg2.png')",
-        teamThree: "url('/img/teamBg3.png')"
+        teamThree: "url('/img/teamBg3.png')",
+        button: "url('/img/button.png')"
       }
     },
   },

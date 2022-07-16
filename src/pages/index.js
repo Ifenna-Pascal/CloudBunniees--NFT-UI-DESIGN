@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Mint from '../components/Mint'
 import Faq from '../sections/Faq'
 import Hero from '../sections/Hero'
 import Team from '../sections/Team'
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
        <main>
           <Hero />
+          <Mint />
           <Team />
           <Faq />
        </main>

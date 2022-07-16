@@ -10,7 +10,7 @@ const Question = ({ question, description }) => {
         >
             <div
                 className={`flex w-full justify-between ${show && "mb-4"
-                    } duration-300 items-center`}
+                    }  items-center`}
             >
 
                 <h1
