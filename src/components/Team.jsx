@@ -2,7 +2,7 @@ import React from 'react'
 
 function TeamOne({ name, desc, img, background }) {
     return (
-        <div className='w-full px-3'>
+        <div className='w-full mb-12 px-3'>
             <h1 className="text-center text-lg font-irish text-white w-full">{name}</h1>
             <div className='relative mt-8'>
                 <img src={img} className="w-20 absolute left-[38%] -top-2 " />
