@@ -30,7 +30,7 @@ function Mint() {
                         <span className="text-white text-sm text-[#B3CBF1] font-irish">Max Mint 2</span>
                     </div>
                 </div>
-                <div className='max-w-[70%] w-full flex itemsc-centr mx-auto'>
+                <div className='max-w-[70%] w-full flex itemsc-center mx-auto'>
                     <button className="bg-button bg-center py-2 shadow-xl bg-cover w-full text-white uppercase text-xl font-irish border-none rounded-3xl mt-6">connect</button>
                 </div>
             </div>
