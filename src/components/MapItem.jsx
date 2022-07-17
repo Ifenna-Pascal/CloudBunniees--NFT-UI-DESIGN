@@ -24,7 +24,7 @@ const MapItem = ({ inverse, id, title, desc }) => {
         </div>
       </div>
       <div className='flex hidden  basis-[50%] p-3  md:flex items-center justify-center'>
-        <img src={inverse ? "/img/dummy.png" : "/img/dummyRight.png"} className="w-36" />
+        <img src={inverse ? "/img/left.png" : "/img/right.png"} className="w-32" />
       </div>
     </div>
   )
