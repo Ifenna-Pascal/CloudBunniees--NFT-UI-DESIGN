@@ -7,9 +7,11 @@ function Footer() {
             <div className='flex flex-col items-center mb-12 relative justify-center'>
                 <h1 className='font-irish text-[26px] md:text-[32px] text-center leading-[70px] text-white mb-3'>Join us</h1>
                 <div className='mx-auto flex items-center  justify-between'>
-                    <Icon icon="ri-send-plane-fill" />
-                    <Icon icon="ri-twitter-fill" />
-                    <Icon icon="ri-twitter-fill" />
+                    <Icon icon="/img/iconL.png" />
+                    <Icon icon="/img/iconsT.png" />
+                    <Icon icon="/img/icong.png" />
+                    <Icon icon="/img/iconD.png" />
+
                 </div>
             </div>
             <div className='bg-[#889FDC] flex items-center justify-center w-screen py-3 absolute bottom-0'>

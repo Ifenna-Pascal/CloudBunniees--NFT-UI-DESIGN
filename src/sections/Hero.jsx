@@ -3,9 +3,9 @@ import Navbar from '../layout/Navbar'
 
 function Hero() {
   return (
-    <div className="h-[90vh] bg-hero bg-no-repeat bg-center bg-blend-darken bg-cover">
+    <div id="home" className="h-[90vh] w-screen bg-hero bg-no-repeat relative bg-bottom  bg-cover">
       <Navbar />
-      <h1 className="text-4xl py-32 font-irish justify-center text-transparent md:my-12 md:text-8xl bg-clip-text font-extrabold bg-gradient-to-b from-[#FF96B3] to-[#85A5DF] flex items-center">CLOUDBUNNIES</h1>
+      <h1 className="text-4xl  font-irish justify-center text-transparent md:my-12 md:text-8xl bg-clip-text font-extrabold bg-gradient-to-b from-[#de5e82] to-[#4577d4] flex items-center">CLOUDBUNNIES</h1>
     </div>
   )
 }

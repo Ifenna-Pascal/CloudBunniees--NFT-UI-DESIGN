@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Mint from '../components/Mint'
 import Faq from '../sections/Faq'
 import Hero from '../sections/Hero'
+import Roadmap from '../sections/Roadmap'
 import Team from '../sections/Team'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
        <main>
           <Hero />
           <Mint />
+          <Roadmap />
           <Team />
           <Faq />
        </main>
