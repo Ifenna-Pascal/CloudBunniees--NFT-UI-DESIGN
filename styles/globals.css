@@ -30,6 +30,13 @@ input[type="number"]::-webkit-outer-spin-button {
       url("/img/faq.png");
   }
 
+  .dark {
+    box-shadow: 0 -30px 40px  #fffefc inset;
+  }
+
+  .darks {
+    box-shadow: 0 40px 40px   inset;
+  }
   .heroBackground {
     background-position: center;
     background-size: cover;

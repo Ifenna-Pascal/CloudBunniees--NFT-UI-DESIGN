@@ -22,7 +22,7 @@ module.exports = {
         teamTwo: "url('/img/teamBg2.png')",
         teamThree: "url('/img/teamBg3.png')",
         button: "url('/img/button.png')",
-        mint_web: "url('/img/mintWeb.png')"
+        mint_web: "url('/img/mintingWeb.png')"
       },
     },
   },
