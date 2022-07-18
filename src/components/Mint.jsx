@@ -12,11 +12,11 @@ function Mint() {
      }
     return (
         <div className='bg-mint my-12 bg-cover bg-no-repeat bg-bottom  md:bg-mint_Web h-[500px]'>
-            <div id='mint' className="md:max-w-[70%] w-[85%] my-12 flex md:flex-row flex-col bg-white rounded-3xl shadow-xl mx-auto w-full h-[450px] md:h-[80%] md:my-20 ">
+            <div id='mint' className="md:max-w-[70%] w-[85%] my-12 flex md:flex-row flex-col bg-white rounded-3xl shadow-xl  mx-auto w-full h-[450px] md:h-[80%] md:my-20 ">
                 <div className='md:w-[35%] w-full h-[40%] md:p-0 p-2 md:h-full'>
                     <img src="/img/mint.jpeg" className="w-full  h-full rounded-3xl object-cover  " />
                 </div>
-                <div className='md:w-[70%] h-full w-full flex flex-col py-4 md:py-6 items-center'>
+                <div className='md:w-[70%] h-full w-full flex flex-col py-4 md:py-6 justify-center items-center'>
                     <h1 className="text-xl md:text-2xl text-[#415DA7] font-semibold mb-1 font-irish">Public Sale is Life</h1>
                     <span className="text-base font-irish text-[#415DA7] mb-1 text-center">please <br /> connect wallet to mint</span>
                     <div className="md:w-[70%]  mb-2 w-[90%] flex  mx-auto mt-2 md:my-1">
