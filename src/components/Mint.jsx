@@ -65,7 +65,7 @@ function Mint() {
     <div className="bg-mint  bg-cover bg-no-repeat md:mb-24 my-12 md:mt-36 bg-bottom py-[3%] md:bg-mint_Web">
       <div
         id="mint"
-        className="md:max-w-[70%] w-[85%] flex md:flex-row flex-col bg-white rounded-3xl shadow-xl  mx-auto w-full h-[450px] md:h-[90%] md:-mt-20 md:mb-20 "
+        className="md:max-w-[1920px] w-[85%] flex md:flex-row flex-col bg-white rounded-3xl shadow-xl  mx-auto w-full h-[450px] md:h-[90%] md:-mt-20 md:mb-20 "
       >
         <div className="md:w-[35%] w-full h-[40%] md:p-0 p-2 md:h-full">
           <img
