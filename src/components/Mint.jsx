@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function Mint() {
   const netID = 0x4; //rinkeby
@@ -58,8 +59,12 @@ function Mint() {
   }
 
   useEffect(() => {
-    // connectWallet();
-  }, [walletAddress, correctNet]);
+    const onLoad = async () => {
+        await connectWallet();
+      };
+      window.addEventListener("load", onLoad);
+      return () => window.removeEventListener("load", onLoad);
+  }, []);
 
   return (
     <div className="bg-mint  bg-cover bg-no-repeat md:mb-24 my-12 md:mt-36 bg-bottom py-[3%] md:bg-mint_Web">
