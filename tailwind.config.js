@@ -10,19 +10,21 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        irish: ['Lemon', 'cursive']
+        irish: ["Lemon", "cursive"],
       },
       backgroundImage: {
         faq: "url('/img/faq.png')",
+        mint: "url('/img/mint.png')",
         hero: "url('/img/cover.png')",
-        hero_mobile: "url('/img/heroMobile.png')",
+        hero_mobile: "url('/img/mobileHero.png')",
         team: "url('/img/team.png')",
         teamOne: "url('/img/teamBg1.png')",
         teamTwo: "url('/img/teamBg2.png')",
         teamThree: "url('/img/teamBg3.png')",
-        button: "url('/img/button.png')"
-      }
+        button: "url('/img/button.png')",
+        mint_web: "url('/img/mintWeb.png')"
+      },
     },
   },
   plugins: [],
-}
+};
