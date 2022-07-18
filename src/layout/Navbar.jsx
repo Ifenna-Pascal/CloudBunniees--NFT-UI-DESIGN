@@ -13,7 +13,7 @@ function Navbar() {
   }, [show]);
   return (
     <>
-      <nav className="py-12 hidden md:block ">
+      <nav className="py-12 hidden lg:block ">
         <div className='max-w-[85%] relative px-12 mx-auto w-full bg-[#AAC1E9] justify-between flex items-center shadow-lg sticky top-0  rounded-[2rem]'>
           <div className='py-4 w-[40%] justify-self-start flex justify-between'>
             <LinkS
@@ -93,12 +93,12 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <nav className="md:hidden z-50 relative">
+      <nav className="lg:hidden z-50 relative">
         <div
           className={`${show ? "w-full h-screen fixed  bg-[rgba(0,0,0,0.3)] lg:bg-transparent " : "w-full"
             } duration-300`}
         >
-          <div className="md:hidden py-6 flex items-center justify-between max-w-[90%] mx-auto ">
+          <div className="lg:hidden py-6 flex items-center justify-between max-w-[90%] mx-auto ">
             <div className="flex w-14 items-center"><img src="/img/logo.png" alt="logo" className="w-full" /></div>
             <i className={` ${show ? "ri-close-line" : "ri-menu-line"} text-4xl font-semibold text-white`} onClick={() => setShow(!show)}></i>
           </div>
