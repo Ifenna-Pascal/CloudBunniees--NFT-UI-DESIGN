@@ -3,7 +3,7 @@ import Navbar from '../layout/Navbar'
 
 function Hero() {
   return (
-    <div id="home" className="lg:h-screen h-screen relative w-screen bg-hero_mobile lg:bg-hero bg-no-repeat relative  lg:bg-bottom bg-center  bg-cover">
+    <div id="home" className="lg:h-screen h-screen max-w-[1920px] relative w-screen bg-hero_mobile lg:bg-hero bg-no-repeat relative  lg:bg-bottom bg-center  bg-cover">
       <Navbar />
       <img src="/img/leftB.png"className="w-52 left-[44%] hidden lg:block top-[20%] absolute" />
       <img src="/img/centerB.png" className="w-52 left-[15%] hidden p-4 lg:block top-[45%] absolute object-fit"  />
