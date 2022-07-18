@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div id="home" className="lg:h-screen h-screen relative w-screen bg-hero_mobile lg:bg-hero bg-no-repeat relative  lg:bg-bottom bg-center  bg-cover">
       <Navbar />
-      <img src="/img/center.png"className="w-[29%] left-[35%] hidden lg:block top-[15%] absolute" />
+      <img src="/img/center.png"className="w-[26%] left-[36%] hidden lg:block top-[15%] absolute" />
       <img src="/img/small_left.png" className="w-[33%] left-0 hidden p-4 lg:block top-[35%] absolute object-fit"  />
       <img src="/img/small_right.png" className="w-[33%] right-0 lg:block p-4 hidden top-[35%] absolute object-fit" />
       {/* mobile */}
