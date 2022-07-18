@@ -20,27 +20,45 @@ function Mint() {
     }
   };
 
-  const initState = async () => {
+  const connectWallet = async () => {
     if (!window.ethereum) {
-      toast.info("Please install Metamask!");
-    } else {
-      try {
-        const accounts = await window.ethereum.request({
-          method: "eth_requestAccounts",
-        });
-        const chainId = await window.ethereum.request({ method: "eth_chainId" });
+      toast.error("Please install Metamask!");
+    }
+    try {
+      const accounts = await ethereum.request({
+        method: "eth_requestAccounts",
+      });
+      const chainId = await ethereum.request({ method: "eth_chainId" });
+
+      setWalletAddress(accounts[0]);
+      setConnectStatus(true);
+      setCorrectNet(chainId == netID);
+
+      toast.success("Wallet Connected Successfully!");
+
+      window.ethereum.on("accountsChanged", (accounts) => {
         setWalletAddress(accounts[0]);
-        setConnectStatus(true);
-        setCorrectNet(chainId == netID)
-      } catch (e) {
-        console.log(e);
-        toast.error("User denied wallet connection!");
-      }
+      });
+
+      window.ethereum.on("chainChanged", async (chainId) => {
+        setCorrectNet(chainId == netID);
+      });
+    } catch (e) {
+      console.error(e);
+      toast.error("User denied wallet connection!");
     }
   };
 
+  const switchNetwork = async () => {
+    try {
+
+    } catch (e) {
+        
+    }
+  }
+
   useEffect(() => {
-    initState();
+    connectWallet();
   }, [walletAddress, correctNet]);
 
   return (
@@ -60,7 +78,15 @@ function Mint() {
             Public Sale is Life
           </h1>
           <span className="text-base font-irish text-[#415DA7] mb-1 text-center">
-            please <br /> connect wallet to mint
+            {walletAddress ? (
+              <>
+                your wallet <br /> {walletAddress}
+              </>
+            ) : (
+              <>
+                please <br /> connect wallet to mint
+              </>
+            )}
           </span>
           <div className="md:w-[70%]  mb-2 w-[90%] flex  mx-auto mt-2 md:my-1">
             <div className="md:w-[70%] w-[60%] bg-[#B0C8EF] rounded-l-xl py-2 flex flex-col  pl-4">
@@ -92,9 +118,22 @@ function Mint() {
             </div>
           </div>
           <div className="max-w-[70%] w-full flex items-center mx-auto">
-            <button className="bg-button bg-center py-2 shadow-xl bg-cover w-full text-white uppercase text-xl font-irish border-none rounded-3xl mt-6">
-              connect
-            </button>
+            {connectStatus && !correctNet && (
+              <button className="bg-button bg-center py-2 shadow-xl bg-cover w-full text-white uppercase text-xl font-irish border-none rounded-3xl mt-6" onClick={switchNetwork}>
+                Switch Network
+              </button>
+            )}
+
+            {correctNet && (
+              <button className="bg-button bg-center py-2 shadow-xl bg-cover w-full text-white uppercase text-xl font-irish border-none rounded-3xl mt-6">
+                Mint
+              </button>
+            )}
+            {!connectStatus && (
+              <button className="bg-button bg-center py-2 shadow-xl bg-cover w-full text-white uppercase text-xl font-irish border-none rounded-3xl mt-6" onClick={connectWallet}>
+                Connect Wallet
+              </button>
+            )}
           </div>
         </div>
       </div>
