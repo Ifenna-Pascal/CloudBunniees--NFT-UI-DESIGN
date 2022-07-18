@@ -5,7 +5,7 @@ function Roadmap() {
   return (
     <div id="map" className='md:my-16'>
       <h1 className="text-white text-3xl font-semibold font-irish my-8 md:my-12 text-center"> Cloudbunnies roadmap </h1>
-      <div className='flex flex-col md:max-w-[80%] mx-auto w-full relative'>
+      <div className='flex flex-col md:max-w-[1920px] mx-auto w-full relative'>
         <div className="absolute left-4 md:left-[49%]  bg-white w-2 md:w-4 rounded-md h-full md:h-[97%] mt-3"></div>
         <MapItem inverse={false} id="01]" title="Overview" desc="Alpha group. Building a project around the community and with the community. Expect NFT airdrops. No far fetched and unreasonable promises. As holder you will be contributing to a greater cause. Under promise over deliver." />
         <MapItem inverse={true} id="02]" title="The Burn Reval" desc="48 hours (time is subject to change) after we sell out. We will start our giveaways on the holders channel. (More on this will be explained below). Shortly after selling out you will also be able to check the rank of your bunnies on sites such as RaritySniper." />
