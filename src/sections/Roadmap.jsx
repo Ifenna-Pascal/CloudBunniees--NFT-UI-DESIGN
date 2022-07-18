@@ -14,6 +14,5 @@ function Roadmap() {
         <MapItem inverse={false} id="05]" title="Secret airdrop for holders" desc="Not going to reveal too much details and emphasis on this subject as we want to surprise our cloud bunnies NFT holders with airdrops! " />      </div>
     </div>
   )
-}
-
+  }
 export default Roadmap

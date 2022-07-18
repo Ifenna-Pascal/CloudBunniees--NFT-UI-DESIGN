@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        irish: ['Mukta', 'sans-serif']
+        irish: ['Lemon', 'cursive']
       },
       backgroundImage: {
         faq: "url('/img/faq.png')",
