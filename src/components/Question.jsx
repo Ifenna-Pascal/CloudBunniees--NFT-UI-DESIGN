@@ -5,11 +5,12 @@ const Question = ({ question, description }) => {
     const [show, setShow] = useState(false);
     return (
         <div
+            data-aos='fade-up'  data-aos-duration='800'
             className={`py-4 rounded-[16px] leading-3 hover:cursor-pointer border-none bg-[#DBEAFF] mx-auto w-full px-8 mb-6`}
             onClick={() => setShow(!show)}
         >
             <div
-                className={`flex w-full justify-between ${show && "mb-4"
+                className={`flex w-full justify-between duration-200   ${show && "mb-4"
                     }  items-center`}
             >
 

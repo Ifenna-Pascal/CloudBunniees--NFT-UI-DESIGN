@@ -1,8 +1,8 @@
 import React from 'react'
 
-function TeamOne({ name, desc, img, background }) {
+function TeamOne({ name, desc, img}) {
     return (
-        <div className='w-full mb-12 px-3'>
+        <div data-aos='fade-down' data-aos-duration='800'  className='w-full mb-12 px-3'>
             <h1 className="text-center text-lg font-irish text-white w-full">{name}</h1>
             <div className='relative mt-8'>
                 <img src={img} className="w-20 absolute left-[38%] -top-2 " />

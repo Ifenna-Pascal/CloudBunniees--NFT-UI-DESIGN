@@ -7,7 +7,7 @@ function Mint() {
 
     }
     return (
-        <div id='mint' data-aos="fade-right"
+        <div id='mint' data-aos="fade-right" data-aos-duration='800'
             data-aos-offset="300"
             data-aos-easing="ease-in-sine" className="md:max-w-[70%] w-[85%] my-12 flex md:flex-row flex-col bg-white rounded-3xl shadow-xl mx-auto w-full h-[450px] md:h-[300px] md:my-20 ">
             <div className='md:w-[35%] w-full h-[40%] md:p-0 p-2 md:h-full'>
