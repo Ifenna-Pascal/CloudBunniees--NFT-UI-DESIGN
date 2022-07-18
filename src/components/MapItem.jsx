@@ -1,15 +1,4 @@
-import React from 'react'
-
-// function MapItem({ id, title, desc }) {
-//   return (
-//     <div className="bg-[#7387D0] text-left w-full rounded-md p-2">
-//       <h1 className="text-white text-xl font-semibold font-irish" >{id} {title}</h1>
-//       <div className="mt-3 text-white text-base font-irish">
-//         {desc}
-//       </div>
-//     </div>
-//   )
-// }
+import React from 'react';
 
 const MapItem = ({ inverse, id, title, desc }) => {
   return (

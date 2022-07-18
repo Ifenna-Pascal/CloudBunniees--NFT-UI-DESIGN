@@ -15,7 +15,7 @@ module.exports = {
       backgroundImage: {
         faq: "url('/img/faq.png')",
         mint: "url('/img/mint.png')",
-        hero: "url('/img/cover.png')",
+        hero: "url('/img/hero.png')",
         hero_mobile: "url('/img/mobileHero.png')",
         team: "url('/img/team.png')",
         teamOne: "url('/img/teamBg1.png')",
